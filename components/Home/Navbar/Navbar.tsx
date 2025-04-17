@@ -1,12 +1,36 @@
+"use client"
+
 import { navlinks } from '@/constant/constant'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 
-const Navbar = () => {
+//define props type
+type Props ={
+    openNav:()=>void
+}
+
+const Navbar = ({openNav}:Props) => {
+
+    const [navBg, setNavBg] = useState(false);
+    useEffect(()=>{
+        const handleScroll = () => {
+            if(window.scrollY >= 90){
+                setNavBg(true)
+            }
+            if(window.scrollY < 90){
+                setNavBg(false)
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+        return ()=>{
+            window.removeEventListener('scroll', handleScroll);
+        }
+    },[]);
+
     return (
-        <div className='fixed h-[12vh] z-[-10] bg-blue-950 w-full'>
+    <div className={`fixed ${navBg ? 'bg-[#240b39]':'fixed'} h-[12vh] z-[-10]  w-full transition-all duration-200`}>
             <div className='flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto'>
                 {/* logo */}
                 <Image src="/images/logo.png" alt='LOGO' height={170} width={170} className='ml-[-1.5rem] sm:ml-0' />
@@ -27,7 +51,7 @@ const Navbar = () => {
                             Hire Me
                         </button>
                         {/* Dropdown for mobile */}
-                        <HiBars3BottomRight className='w-8 h-8 text-white cursor-pointer lg:hidden'/>
+                        <HiBars3BottomRight onClick={openNav} className='w-8 h-8 text-white cursor-pointer lg:hidden'/>
                     </div>
                 </div>
             </div>
