@@ -1,9 +1,11 @@
+import profile from '../images/profile.png';
+
 export const BaseInfo = {
-    name: "Sajal",
+    name: "Sahil Pan",
     position: "Full Stack Web Developer",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro numquam ad, vero consequuntur aperiam cumque voluptatum pariatur veniam? Qui facilis est ipsam odio cum!",
-    profilePic: "/images/hero.png",
+    profilePic: profile,
   };
   
   export const aboutInfo = {
