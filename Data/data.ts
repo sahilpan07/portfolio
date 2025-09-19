@@ -1,4 +1,10 @@
 import profile from '../images/profile.png';
+import Navprofile from '../images/NavProfile.jpg';
+
+export const NavBarInfo = {
+  image: Navprofile,
+  name: "Sahil Pan",
+};
 
 export const BaseInfo = {
     name: "Sahil Pan",
