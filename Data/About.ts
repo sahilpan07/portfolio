@@ -1,4 +1,8 @@
-// About.ts (data)
+import customer from "@/images/customer.png";
+import experiences from "@/images/experience.png";
+import project from "@/images/completed.png";
+import website from "@/images/rocket.png";
+
 export const aboutHead = {
   heading: "About Me",
   intro:
@@ -7,6 +11,31 @@ export const aboutHead = {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit blanditiis nesciunt, a, excepturi doloribus adipisci, corrupti repudiandae rem voluptate necessitatibus voluptatum beatae eos debitis odit nobis cupiditate dolore iure. Odit.",
   downloadButtonText: "Download",
 };
+
+export const stats ={
+  stat:[
+    {
+      image:customer,
+      number:"50",
+      title:"Satisfied Customer"
+    },
+        {
+      image:experiences,
+      number:"50",
+      title:"Years Experience"
+    },
+            {
+      image:project,
+      number:"50",
+      title:"Completed Project"
+    },
+            {
+      image:website,
+      number:"50",
+      title:"Website Launched"
+    }
+  ]
+} 
 
 export const capabilities = {
   heading: "My Capabilities",

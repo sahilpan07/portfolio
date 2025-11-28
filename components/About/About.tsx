@@ -1,16 +1,29 @@
 "use client";
 import React from "react";
+import { StaticImageData } from "next/image";
+import Image from "next/image";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { aboutHead, capabilities, experience, connect } from "@/Data/About";
+import {
+  aboutHead,
+  stats,
+  capabilities,
+  experience,
+  connect,
+} from "@/Data/About";
 
-// --------------- Type Definitions ----------------
 type AboutHeadType = {
   heading: string;
   intro: string;
   description: string;
   downloadButtonText: string;
+};
+
+type StatsType = {
+  image: StaticImageData;
+  number: string;
+  title: string;
 };
 
 type CapabilitiesType = {
@@ -35,10 +48,6 @@ type ConnectType = {
   heading: string;
   email: string;
   resume: string;
-};
-
-type ContactFormType = {
-  heading: string;
 };
 
 type FormValues = {
@@ -89,9 +98,9 @@ const onSubmit = (
   resetForm();
 };
 
-// ---------------- Component -----------------
 const About = () => {
   const aboutHeadData: AboutHeadType = aboutHead;
+  const statsData: StatsType[] = stats.stat;
   const capabilitiesData: CapabilitiesType = capabilities;
   const experienceData: ExperienceType = experience;
   const connectData: ConnectType = connect;
@@ -121,6 +130,28 @@ const About = () => {
           </div>
         </div>
 
+        <div className="grid grid-cols-4 gap-6">
+          {statsData.map((stat, index) => (
+            <div
+              key={index}
+              className="flex flex-col border border-gray-500 p-8 rounded-2xl"
+            >
+              <div className="flex flex-col gap-2 items-center">
+                <Image
+                  className="w-24"
+                  src={stat.image}
+                  alt={stat.title}
+                  width={64}
+                  height={64}
+                />
+                <p className="font-bold text-xl">{stat.number}+</p>
+                <p className="text-md font-bold text-gray-400">{stat.title}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <hr className="my-4 border-gray-600" />
+
         {/* Capabilities Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
@@ -144,7 +175,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <hr className="my-8 border-gray-600" />
+        <hr className="my-4 border-gray-600" />
         {/* Experience Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
@@ -167,7 +198,7 @@ const About = () => {
             ))}
           </div>
         </div>
-        <hr className="my-8 border-gray-600" />
+        <hr className="my-4 border-gray-600" />
         {/* Connect Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="flex flex-col gap-4">
