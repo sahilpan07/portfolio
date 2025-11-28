@@ -1,0 +1,51 @@
+// About.ts (data)
+export const aboutHead = {
+  heading: "About Me",
+  intro:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. In nobis quidem nulla est reprehenderit quo distinctio maiores",
+  description:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit blanditiis nesciunt, a, excepturi doloribus adipisci, corrupti repudiandae rem voluptate necessitatibus voluptatum beatae eos debitis odit nobis cupiditate dolore iure. Odit.",
+  downloadButtonText: "Download",
+};
+
+export const capabilities = {
+  heading: "My Capabilities",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque nesciunt et eveniet voluptates, dolore",
+  skills: [
+    "HTML",
+    "CSS",
+    "JAVASCRIPT",
+    "typescript",
+    "postgre Sql",
+    "MongoDb",
+    "Next js",
+    "python",
+  ],
+};
+
+export const experience = {
+  heading: "My Experience",
+  jobs: [
+    {
+      role: "Frontend Intern",
+      company: "IIT Company",
+      duration: "2023-2024",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis harum molestias, iure libero necessitatibus odio volu",
+    },
+    {
+      role: "Frontend Developer",
+      company: "MMIT Company",
+      duration: "2024-2025",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis harum molestias, iure libero necessitatibus odio volu",
+    },
+  ],
+};
+
+export const connect = {
+  heading: "Let's connect",
+  email: "gello@gmail.com",
+  resume: "for more info, here's my resume",
+};
