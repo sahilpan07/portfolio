@@ -1,12 +1,14 @@
 import Image from "next/image";
 import React from "react";
+import { StaticImageData } from "next/image";
+
 
 type Props = {
   service: {
     id: number;
     title: string;
     description: string;
-    icon: string;
+    icon: StaticImageData;
   };
 };
 
