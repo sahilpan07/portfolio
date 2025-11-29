@@ -106,7 +106,7 @@ const About = () => {
   const connectData: ConnectType = connect;
 
   return (
-    <div className="text-white w-full pt-24 sm:pt-28 lg:pt-[25vh] min-h-screen bg-[#0f0715] relative overflow-hidden">
+    <div className="text-white w-full pt-10 min-h-screen bg-[#0f0715] relative overflow-hidden">
       <div className="flex justify-center flex-col w-4/5 h-full mx-auto gap-20">
         {/* About Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
