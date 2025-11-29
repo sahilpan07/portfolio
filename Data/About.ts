@@ -9,33 +9,33 @@ export const aboutHead = {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. In nobis quidem nulla est reprehenderit quo distinctio maiores",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit blanditiis nesciunt, a, excepturi doloribus adipisci, corrupti repudiandae rem voluptate necessitatibus voluptatum beatae eos debitis odit nobis cupiditate dolore iure. Odit.",
-  downloadButtonText: "Download",
+  downloadButtonText: "Download Resume",
 };
 
-export const stats ={
-  stat:[
+export const stats = {
+  stat: [
     {
-      image:customer,
-      number:"50",
-      title:"Satisfied Customer"
+      image: customer,
+      number: "50",
+      title: "Satisfied Customer",
     },
-        {
-      image:experiences,
-      number:"50",
-      title:"Years Experience"
+    {
+      image: experiences,
+      number: "50",
+      title: "Years Experience",
     },
-            {
-      image:project,
-      number:"50",
-      title:"Completed Project"
+    {
+      image: project,
+      number: "50",
+      title: "Completed Project",
     },
-            {
-      image:website,
-      number:"50",
-      title:"Website Launched"
-    }
-  ]
-} 
+    {
+      image: website,
+      number: "50",
+      title: "Website Launched",
+    },
+  ],
+};
 
 export const capabilities = {
   heading: "My Capabilities",
