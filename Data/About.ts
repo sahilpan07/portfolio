@@ -12,30 +12,32 @@ export const aboutHead = {
   downloadButtonText: "Download Resume",
 };
 
-export const stats = {
-  stat: [
-    {
-      image: customer,
-      number: "50",
-      title: "Satisfied Customer",
-    },
-    {
-      image: experiences,
-      number: "50",
-      title: "Years Experience",
-    },
-    {
-      image: project,
-      number: "50",
-      title: "Completed Project",
-    },
-    {
-      image: website,
-      number: "50",
-      title: "Website Launched",
-    },
-  ],
-};
+export const statsData = [
+  {
+    id: 1,
+    image: customer,
+    number: "50",
+    title: "Satisfied Customer",
+  },
+  {
+    id: 2,
+    image: experiences,
+    number: "50",
+    title: "Years Experience",
+  },
+  {
+    id: 3,
+    image: project,
+    number: "50",
+    title: "Completed Project",
+  },
+  {
+    id: 4,
+    image: website,
+    number: "50",
+    title: "Website Launched",
+  },
+];
 
 export const capabilities = {
   heading: "My Capabilities",
