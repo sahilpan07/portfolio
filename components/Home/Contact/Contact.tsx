@@ -2,17 +2,16 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 
 type ContactProps = {
   contact: {
-    heading: string;
+    phone: string;
     email: string;
-    resume: string;
+    address: string;
   };
 };
 
-// Form fields type
 type FormValues = {
   name: string;
   email: string;
@@ -71,14 +70,17 @@ const Contact = ({ contact }: ContactProps) => {
   return (
     <div className="text-white w-full pt-10 min-h-screen bg-[#0f0715] relative overflow-hidden">
       <div className="flex justify-center flex-col w-4/5 h-full mx-auto gap-20">
+        <hr className="mb-2 border-gray-600" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 text-white">
           {/* Contact Info */}
           <div className="flex flex-col gap-6">
-            <h2 className="text-4xl font-bold uppercase">{contact.heading}</h2>
+            <h2 className="text-4xl font-bold uppercase">Let's Connect</h2>
             <p className="text-gray-400 font-semibold">
               Say Hello at {contact.email}
             </p>
-            <p className="text-gray-400">{contact.resume}</p>
+            <p className="text-gray-400 font-semibold">{contact.phone}</p>
+            <p className="text-gray-400 font-semibold">{contact.address}</p>
+            <p className="text-gray-400">For more info, Here's my resume</p>
             <div className="flex gap-4 text-yellow-400 text-2xl">
               <a
                 href="https://github.com/"
@@ -93,6 +95,20 @@ const Contact = ({ contact }: ContactProps) => {
                 rel="noopener noreferrer"
               >
                 <FaLinkedin />
+              </a>
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram />
               </a>
             </div>
           </div>
