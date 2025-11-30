@@ -15,14 +15,13 @@ const About = () => {
             <AboutCard key={stat.id} stat={stat} />
           ))}
         </div>
-                <hr className="my-4 border-gray-600" />
+        <hr className="my-4 border-gray-600" />
 
-        <Capabilities capability={capabilities}/>
-                <hr className="my-4 border-gray-600" />
+        <Capabilities capability={capabilities} />
+        <hr className="my-4 border-gray-600" />
 
-        <Experience experience={experience}/>
-                <hr className="my-4 border-gray-600" />
-
+        <Experience experience={experience} />
+        <hr className="my-4 border-gray-600" />
       </div>
     </div>
   );

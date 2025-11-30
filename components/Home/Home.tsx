@@ -5,12 +5,15 @@ import Project from "./Project/Project";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
 import { connect } from "@/Data/About";
+import Skills from "./Skills/Skills";
+import { skillsData } from "@/Data/Skills";
 
 const Home = () => {
   return (
     <div className="overflow-hidden">
       <HomeMain />
       <About />
+      <Skills />
       <Services />
       <Project />
       {/* Pass the contact info from your data */}
