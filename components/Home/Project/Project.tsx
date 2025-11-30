@@ -10,7 +10,7 @@ const Project = () => {
           <h1 className="font-bold text-4xl text-white uppercase">
             featured project
           </h1>
-          <p className="font-semibold text-[#696969]">
+          <p className="font-semibold text-[#696969] text-center">
             Description Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Nihil vel culpa sapiente doloribus laboriosam vitae quis obcaecati?
             Accusamus

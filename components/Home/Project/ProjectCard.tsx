@@ -30,7 +30,9 @@ const ProjectCard = ({ project }: Props) => {
       <div className="flex flex-col gap-6 p-8">
         <div className="flex flex-col gap-3">
           <h1 className="text-3xl">{project.title}</h1>
-          <p className="font-semibold text-[#696969]">{project.description}</p>
+          <p className="font-semibold text-[#696969] text-justify">
+            {project.description}
+          </p>
         </div>
         <div className="flex flex-col gap-3">
           <p>Project Detail</p>

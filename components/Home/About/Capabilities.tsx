@@ -13,10 +13,10 @@ const Capabilities = ({ capability }: Props) => {
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
-          <p className="font-bold text-4xl uppercase">{capability.heading}</p>
+          <p className="font-bold text-4xl uppercase text-justify">{capability.heading}</p>
         </div>
         <div className="grid grid-col-1 gap-6">
-          <p className="font-semibold text-[#696969]">
+          <p className="font-semibold text-[#696969] text-justify">
             {capability.description}
           </p>
           <div className="flex flex-wrap gap-4">

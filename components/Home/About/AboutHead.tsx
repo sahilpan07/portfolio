@@ -18,8 +18,8 @@ const AboutHead = ({ about }: Props) => {
           {about.heading}
         </div>
         <div className="flex flex-col gap-4">
-          <p className="font-bold text-white">{about.intro}</p>
-          <p className="font-semibold text-[#696969]">{about.description}</p>
+          <p className="font-bold text-white text-justify">{about.intro}</p>
+          <p className="font-semibold text-[#696969] text-justify">{about.description}</p>
           <div className="flex items-center text-white gap-8">
             <button className="md:px-8 md:py-2.5 px-6 py-1.5 text-white font-semibold text-md md:text-lg transition-all duration-200 rounded-lg bg-blue-700 hover:bg-blue-900 flex items-center space-x-2">
               {about.downloadButtonText}

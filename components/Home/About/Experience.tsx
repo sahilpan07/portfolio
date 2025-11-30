@@ -29,7 +29,7 @@ const Experience = ({experience}:Props) => {
               <p className="text-[#696969]">{job.duration}</p>
             </div>
             <p className="text-md text-[#FFFF33]">{job.company}</p>
-            <p className="font-semibold text-[#696969]">{job.description}</p>
+            <p className="font-semibold text-[#696969] text-justify">{job.description}</p>
           </div>
         ))}
       </div>

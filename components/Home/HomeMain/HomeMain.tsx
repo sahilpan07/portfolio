@@ -18,7 +18,7 @@ const HomeMain: React.FC = () => {
             <h1 className="pb-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold  md:leading-[3rem] lg:leading-[3.5rem] xl:leading-[4rem] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-white">
               {BaseInfo.position}
             </h1>
-            <p className="text-gray-400 mt-6 text-sm md:text-base">
+            <p className="text-gray-400 mt-6 text-sm md:text-base text-justify">
               {BaseInfo.description}
             </p>
             <button className="mt-6 md:px-8 md:py-2.5 px-6 py-1.5 bg-purple-600 hover:bg-purple-700 transition rounded-md text-sm md:text-lg text-white font-semibold transition-all duration-200">
