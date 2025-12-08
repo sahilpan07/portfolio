@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ResponsiveNavbar from "@/components/Home/Navbar/ResponsiveNavbar";
+import Footer from "@/components/Home/Footer/Footer";
+import { contactData } from "@/Data/data";
+import ScrolltoTop from "@/components/Extra/ScrolltoTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +33,8 @@ export default function RootLayout({
       >
         <ResponsiveNavbar />
         {children}
+        <Footer contact={contactData} />
+        <ScrolltoTop />
       </body>
     </html>
   );

@@ -1,8 +1,8 @@
+import { blogsData } from "@/Data/blog";
 import React from "react";
-import { servicesData } from "@/Data/Services";
-import ServiceCard from "./ServiceCard";
+import BlogCard from "./BlogCard";
 
-const Services = () => {
+const Blog = () => {
   return (
     <div className="text-white w-full pt-[20vh] min-h-screen bg-[#0f0715] relative overflow-hidden">
       <div className="flex justify-center flex-col w-4/5 h-full mx-auto gap-20">
@@ -14,7 +14,7 @@ const Services = () => {
             data-aos-delay="100"
             className="font-bold text-4xl text-white uppercase"
           >
-            Services
+            Blogs
           </p>
           <p
             data-aos="fade-up"
@@ -27,16 +27,16 @@ const Services = () => {
           </p>
         </div>
 
-        {/* Service Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8">
-          {servicesData.map((service, i) => (
+        {/* Blog Cards */}
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          {blogsData.map((blogData, i) => (
             <div
-              key={service.id}
+              key={blogData.id}
               data-aos="zoom-in"
               data-aos-delay={150 + i * 100}
               className="border border-gray-500 rounded-xl p-4 lg:p-8"
             >
-              <ServiceCard service={service} />
+              <BlogCard blogData={blogData} />
             </div>
           ))}
         </div>
@@ -46,4 +46,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Blog;

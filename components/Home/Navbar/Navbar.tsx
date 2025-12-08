@@ -35,7 +35,7 @@ const Navbar = ({ openNav }: Props) => {
         navBg ? "bg-[#1a101f] border-b-2 border-gray-500" : "fixed"
       } h-[12vh] z-[10]  w-full transition-all duration-200`}
     >
-      <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
+      <div className="flex items-center h-full justify-between w-4/5 mx-auto">
         {/* logo */}
         <div className="flex flex-cols items-center gap-6">
           <Image
@@ -65,7 +65,7 @@ const Navbar = ({ openNav }: Props) => {
           </div>
           {/* Button */}
           <div className="flex items-center space-x-4">
-            <button className="md:px-10 md:py-3 px-8 py-3 text:blue-800 font-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg">
+            <button className="hidden sm:flex md:px-10 md:py-3 px-8 py-3 text:blue-800 font-semibold sm:text-base text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg">
               Hire Me
             </button>
             {/* Dropdown for mobile */}
